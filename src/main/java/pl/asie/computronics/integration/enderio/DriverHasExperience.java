@@ -46,7 +46,7 @@ public class DriverHasExperience {
 
 			@Callback(doc = "function():number; Returns the maximum amount of EXP the tile can store")
 			public Object[] getMaxExperience(Context c, Arguments a) {
-				return new Object[] { tile.getContainer().getMaximumExperiance() };
+				return new Object[] { tile.getContainer().getMaximumExperience() };
 			}
 		}
 
@@ -98,7 +98,7 @@ public class DriverHasExperience {
 					return new Object[] { tile.getContainer().getExperienceLevel() };
 				}
 				case 2: {
-					return new Object[] { tile.getContainer().getMaximumExperiance() };
+					return new Object[] { tile.getContainer().getMaximumExperience() };
 				}
 			}
 			return new Object[] {};

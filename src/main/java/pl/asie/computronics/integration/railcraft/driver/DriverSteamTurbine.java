@@ -3,7 +3,8 @@ package pl.asie.computronics.integration.railcraft.driver;
 import dan200.computercraft.api.lua.ILuaContext;
 import dan200.computercraft.api.lua.LuaException;
 import dan200.computercraft.api.peripheral.IComputerAccess;
-import mods.railcraft.common.blocks.multi.TileSteamTurbine;
+import mods.railcraft.common.blocks.logic.SteamTurbineLogic;
+import mods.railcraft.common.blocks.structures.TileSteamTurbine;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -48,10 +49,10 @@ public class DriverSteamTurbine {
 		public Object[] callMethod(IComputerAccess computer, ILuaContext context, int method, Object[] arguments) throws LuaException, InterruptedException {
 			switch(method) {
 				case 0: {
-					return new Object[] { tile.getOutput() };
+					return new Object[] { tile.getLogic(SteamTurbineLogic.class).get().operatingRatio };
 				}
 				case 1: {
-					final IInventory inventory = tile.getInventory();
+					final IInventory inventory = tile.getLogic(SteamTurbineLogic.class).get().getInventory();
 					if(inventory != null && inventory.getSizeInventory() > 0) {
 						final ItemStack itemStack = inventory.getStackInSlot(0);
 						if(itemStack != null) {

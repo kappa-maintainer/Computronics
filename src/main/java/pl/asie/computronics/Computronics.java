@@ -93,11 +93,11 @@ import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Mod(modid = Mods.Computronics, name = Mods.Computronics_NAME, version = "@VERSION@",
+@Mod(modid = Mods.Computronics, name = Mods.Computronics_NAME, version = "1.6.7",
 	dependencies = "required-after:asielib;required-after:forge@[14.23.5.2847,);"
 		+ "after:computercraft;after:opencomputers@[1.7,);after:tis3d@[1.2.0,);"
 		+ "before:openperipheralcore@[1.1,);before:openperipheralapi@[3.2,);"
-		+ "after:buildcraft|core@[7.2.0,);after:railcraft@[12.0,);"
+		+ "after:buildcraft|core@[7.2.0,);after:railcraft@[12.1.0-alpha-6,);"
 		+ "after:gregtech;after:enderio@[5.1.55,);"
 		+ "after:forestry@[5.7.0,);after:waila@[1.5.10,);"
 		+ "after:mekanismapi|energy@[8.0.0,);after:flamingo@[1.7.10-1.3,);"

@@ -23,7 +23,7 @@ import pl.asie.lib.tweak.enchantment.EnchantmentTweak;
 import java.lang.reflect.Method;
 import java.util.Random;
 
-@Mod(modid = Mods.AsieLib, name = Mods.AsieLib_NAME, version = "@AL_VERSION@",
+@Mod(modid = Mods.AsieLib, name = Mods.AsieLib_NAME, version = "1.0.0",
 	dependencies = "required-after:forge@[14.21.1.2387,)")
 public class AsieLibMod extends AsieLibAPI {
 
